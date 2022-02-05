@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Feb 2022 pada 11.37
+-- Waktu pembuatan: 05 Feb 2022 pada 17.52
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.11
 
@@ -39,19 +39,16 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
-(1, 'anang syah amirul haqim', 'anang@gmail.com', 'anang7887'),
-(2, 'zainudin basyar', 'zainudin@gmail.com', 'zainudin5472'),
-(3, 'reza aditya', 'reza@gmail.com', 'reza93030'),
-(4, 'havis ', 'havis33@gmail.com', 'hhhfhei939'),
-(16, 'muhammad reza nur aditya', 'rezanur798@gmail.com', 'reza90990'),
-(17, 'iqshal syafallam', 'iqshall980@gmail.co', 'hruhhrhur'),
-(18, 'muhammad ferdiansyah', 'ferdigus90@gmail.com', 'duhuhhuf'),
-(19, 'Ariandita Hadi Nugroho', 'adit33@gail.com', 'adithfhfduf'),
-(20, 'crishna ramadhan', 'crishna@gmail.com', 'crishnaiejie'),
-(21, 'Muhammad Reyka Fatahillah', 'reyka@gmail.com', 'fheufhuh'),
-(22, 'bayu', 'bayu@gmail.com', 'rrhrugojo9i893'),
-(23, 'noor tri afriansyah', 'pigo773@gmail.com', 'ijfirjjfew'),
-(24, 'ferdiansyah', 'ferdi79@gmail.com', 'fefefe');
+(1, 'anang', 'anangsyah@gmail.com', '2326af735beba37279d41c7f0ab62e73'),
+(2, 'zainudin basyar', 'zainudin@gmail.com', '1d0c70bd1e985dcdaf475ae61e7ca5b7'),
+(3, 'reza aditya', 'reza@gmail.com', 'bb98b1d0b523d5e783f931550d7702b6'),
+(4, 'havis stevano', 'havis33@gmail.com', '67a85fda99d50e5fa3a3f4c08bebf439'),
+(17, 'iqshal syafallam', 'iqshall980@gmail.co', '0a3b772468d4558aa76a9e7d489bf225'),
+(18, 'muhammad ferdiansyah', 'ferdigus90@gmail.com', '8bf4bb0e2efad01abe522bf314504a49'),
+(19, 'Ariandita Hadi Nugroho', 'adit33@gail.com', '1061bb40ea99675d095192c6ea8f9f54'),
+(20, 'crishna ramadhan', 'crishna@gmail.com', 'e02fb60a86c686a16519225b10729489'),
+(23, 'noor tri afriansyah', 'pigo773@gmail.com', 'db5a15e4d0c2708f1f41ee1be55cdbea'),
+(26, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +58,8 @@ INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
@@ -71,7 +69,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

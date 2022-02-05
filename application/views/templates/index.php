@@ -8,6 +8,7 @@
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary"><?= $title; ?>
                                 <a href="<?= base_url('Home/tambah_data'); ?>" class="btn btn-primary btn-sm float-right">Tambah Data</a>
+                                <p><?php $this->session->userdata('auth')['username']; ?></p>
                             </div>
                             <div class="card-body">
                             <?= $this->session->flashdata('pesan'); ?>
