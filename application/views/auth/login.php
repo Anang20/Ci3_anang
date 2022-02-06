@@ -35,8 +35,8 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                <img src="<?= base_url('files/img/undraw_posting_photo.svg'); ?>" alt="" class="w-100 h-100">
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <img src="<?= base_url('files/img/undraw_login.svg'); ?>" alt="" class="w-100 h-100">
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
