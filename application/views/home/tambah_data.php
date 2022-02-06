@@ -7,19 +7,19 @@
         <div class="row mb-3">
             <label for="username" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-5">
-            <input type="text" class="form-control" name="username">
+            <input type="text" class="form-control" name="username" required>
             </div>
         </div>
         <div class="row mb-3">
             <label for="email" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-5">
-            <input type="email" class="form-control" name="email">
+            <input type="email" class="form-control" name="email" required>
             </div>
         </div>
         <div class="row mb-3">
             <label for="password" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-5">
-            <input type="password" class="form-control" name="password">
+            <input type="password" class="form-control" name="password" required>
             </div>
         </div>
         <div class="row mb-3">

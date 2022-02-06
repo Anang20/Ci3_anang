@@ -24,7 +24,7 @@ class AuthModel extends CI_Model {
             $user = $this->db->query('SELECT * FROM user WHERE username = ?', $username)->row_array();
             if (!empty($user)) 
             {
-                if ($user['password'] == md5($password)) {
+                if ($user['password'] == md5($password) || $user['password'] == $password) {
                     $this->session->set_userdata('auth', $user);
                     redirect(base_url());
                 } else {
